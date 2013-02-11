@@ -36,7 +36,7 @@
   (GET ["/:id", :id #"[0-9]+"] [id] 
        (response-or-not-found (get-task (read-string id))))
   (POST "/" {task :params} 
-        (response (add-task (parse-task task))))
-  (POST "/" {task :params} 
-        (response (update-task (parse-task task)))))
+       (response (add-task (parse-task task))))
+  (PUT "/" {task :params} 
+       (response (update-task (parse-task task)))))
 
