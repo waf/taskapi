@@ -12,7 +12,7 @@
   (table :activities
          (integer :id :unique :auto-inc :primary-key)
          (varchar :name 255 :not-null)
-         (integer :projects_id :not-null [:refer :projects :id])))
+         (integer :tasks_id :not-null [:refer :tasks :id])))
 
 (def tasks
   (table :tasks
