@@ -2,6 +2,7 @@
   (:use compojure.core)
   (:use ring.util.response)
   (:use korma.core)
+  (:use korma.db)
   (:use taskapi.entity.core)
   (:use taskapi.common.http)
   (:use taskapi.common.core)
