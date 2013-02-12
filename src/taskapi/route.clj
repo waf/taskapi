@@ -1,7 +1,7 @@
 (ns taskapi.route
   (:use compojure.core)
   (:use ring.util.response)
-  (:use taskapi.task.core)
+  (:use taskapi.api.task)
   (:require [compojure.handler :as handler]
             [compojure.route :as route]
             [ring.middleware.json :as json]))
